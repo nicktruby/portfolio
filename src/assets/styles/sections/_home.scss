@@ -1,0 +1,10 @@
+.home {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: $spacing*8 0;
+}

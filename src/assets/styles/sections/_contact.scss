@@ -1,0 +1,67 @@
+.contact {
+  position: relative;
+  background: url('/src/assets/images/grey-bg.png');
+  z-index: 5;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  align-items: center;
+  h2 {
+    color: $text-dark-high;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: $spacing*4;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+
+    .fa-icon {
+      color: $text-dark-mid;
+      font-size: 2rem;
+
+      &:hover, &:active, &:focus {
+        color: $primary;
+      }
+
+    }
+    
+    p {
+      color: $text-dark-high;
+    }
+    
+  }
+
+  footer {
+    padding: $spacing*4;
+    
+    span {
+      color: $text-dark-high;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact .contact-grid .fa-icon {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .fa-icon {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fa-icon {
+    font-size: 5rem;
+  }
+}

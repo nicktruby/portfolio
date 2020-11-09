@@ -1,0 +1,120 @@
+.experience {
+  z-index: 4;
+  background: url('/src/assets/images/grey-bg.png');
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  
+  .wrapper {
+    display: grid;
+    gap: $spacing*4;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  h2 {
+    color: $text-dark-high;
+  }
+  
+  p {
+    color: $text-dark-mid;
+
+  }
+  
+  .dev__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .dev__item {
+    font-size: 2rem;
+    margin: 0.1em;
+    color: $text-dark-mid;
+    &:hover, &:active, &:focus {
+      color: $primary;
+    }
+  }
+  
+  hr {
+    background: $primary;
+  }
+  
+  .career {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $spacing*2;
+  }
+
+  .employer {
+    height: 100%;
+    display: grid;
+    gap: $spacing*2;
+    align-items: start;
+    grid-template-rows: 50px auto;
+    
+    .employer-header{
+      display: grid;
+      grid-template-columns: 50px auto;
+      gap: $spacing*2;
+      align-items: center;
+      
+      h4 {
+        font-size: 1.5em;
+        color: $text-dark-mid;
+      }
+      span{
+        text-align: right;
+        color: $text-dark-low;
+
+      }
+
+      img {
+        width: 50px;
+        border: 1px solid $text-dark-high;
+        border-radius: 5px;
+      }
+    }
+  
+    p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: $text-dark-mid;
+    
+    a {
+      
+    }
+  }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .experience .career {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dev__list .dev__item{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience .career {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dev__list .dev__item{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .experience .career {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .dev__list .dev__item{
+    font-size: 5rem;
+  }
+}

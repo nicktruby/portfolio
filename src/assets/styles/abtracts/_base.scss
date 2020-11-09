@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: $bg-dark;
+}
+
+section {
+  position: relative;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing*2;
+}
+
+main {
+  min-height: 200vh;
+  background-color: $bg-dark;
+
+}
+
+a { 
+  color: inherit;
+}
