@@ -92,6 +92,17 @@
   }
 }
 
+@media (max-width: 740px) {
+  .experience .wrapper {
+    grid-template-columns: auto;
+    
+    > p {
+      text-align: center;
+    }
+  
+  }
+}
+
 @media screen and (min-width: 600px) {
   .experience .career {
     grid-template-columns: repeat(2, 1fr);

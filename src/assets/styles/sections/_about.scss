@@ -20,3 +20,14 @@
     }
   }
 }
+
+@media (max-width: 740px) {
+  .about .wrapper {
+    grid-template-columns: auto;
+    
+    p{
+      text-align: center;
+    }
+  
+  }
+}

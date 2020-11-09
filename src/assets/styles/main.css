@@ -429,6 +429,16 @@ strong {
   color: rgba(250, 250, 250, 0.7);
 }
 
+@media (max-width: 740px) {
+  .about .wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .about .wrapper p {
+    text-align: center;
+  }
+}
+
 .bio {
   z-index: 2;
   background: url("../images/grey-bg.png");
@@ -668,6 +678,16 @@ strong {
   font-size: 1em;
   margin-bottom: 0.5em;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 740px) {
+  .experience .wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .experience .wrapper > p {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 600px) {
