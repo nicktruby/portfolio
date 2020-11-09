@@ -101,6 +101,7 @@ strong {
   position: absolute;
   left: 32px;
   top: 16px;
+  transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   z-index: 4;
   font-size: 2rem;
   font-weight: 600;
@@ -138,6 +139,7 @@ strong {
   right: 8px;
   box-shadow: 0px 0px 20px 0 rgba(30, 30, 30, 0.3);
   transform: scale(1);
+  transition: all 0.75s cubic-bezier(0.79, 0, 0.24, 1) 0s;
 }
 
 .nav-links {
@@ -164,6 +166,7 @@ strong {
   left: 0;
   right: 0;
   top: 50%;
+  transition: width 0.3s cubic-bezier(0.68, 0, 0.33, 1) 0.1s, border-color 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .nav-link a:hover::after {
   width: 100%;
@@ -200,6 +203,7 @@ Media Queries
     left: 8px;
     box-shadow: 0px 0px 20px 0 rgba(30, 30, 30, 0.3);
     transform: scale(1);
+    transition: all 0.75s cubic-bezier(0.79, 0, 0.24, 1) 0s;
   }
 
   .burger-line {
@@ -222,6 +226,7 @@ Media Queries
     top: 10vh;
     left: 0;
     z-index: 3;
+    transition: all 0.75s cubic-bezier(0.79, 0, 0.24, 1) 0s;
   }
   .nav-menu::before {
     content: unset;
@@ -235,6 +240,7 @@ Media Queries
     align-items: center;
     font-size: 2em;
     transform: scale(0);
+    transition: all 0.75s cubic-bezier(0.79, 0, 0.24, 1) 0s;
   }
 
   .nav-link a {
@@ -251,6 +257,7 @@ Media Queries
     align-items: center;
     font-size: 1.5em;
     transform: scale(0);
+    transition: all 0.75s cubic-bezier(0.79, 0, 0.24, 1) 0s;
   }
 
   .nav.open .nav-initials span, .nav.open .nav-link a {
