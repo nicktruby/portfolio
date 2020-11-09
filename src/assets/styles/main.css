@@ -331,7 +331,7 @@ Media Queries
 
 .bio {
   z-index: 2;
-  background: url("https://nicktruby.github.io/portfolio/src/assets/images/grey-bg.png");
+  background: url("../images/grey-bg.png");
   padding: 70px 0;
   width: 100%;
   display: flex;
@@ -368,7 +368,7 @@ Media Queries
 }
 .contact {
   position: relative;
-  background: url("https://nicktruby.github.io/portfolio/src/assets/images/grey-bg.png");
+  background: url("../images/grey-bg.png");
   z-index: 5;
   width: 100%;
   min-height: 100vh;
@@ -425,7 +425,7 @@ Media Queries
 }
 .experience {
   z-index: 4;
-  background: url("https://nicktruby.github.io/portfolio/src/assets/images/grey-bg.png");
+  background: url("../images/grey-bg.png");
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
