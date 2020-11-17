@@ -36,6 +36,7 @@
 
 .nav-initials span {
   position: absolute;
+  text-transform: lowercase;
   left: $spacing*3;
   top: $spacing;
   transition: all .5s cubic-bezier(.55,.055,.675,.19);
@@ -96,6 +97,7 @@
   font-size: 1.2em;
   width: fit-content;
   a {
+    text-transform: lowercase;
     color: inherit;
     padding: $spacing;
     

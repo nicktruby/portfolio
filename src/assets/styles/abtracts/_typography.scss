@@ -5,6 +5,7 @@
 h1 {
   font-size: 4rem;
   color: $text-light-high;
+  text-transform: lowercase;
   
   span {
     color: $primary;
@@ -15,6 +16,7 @@ h2 {
   font-size: 3rem;
   padding: 70px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 p {

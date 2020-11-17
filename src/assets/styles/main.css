@@ -38,6 +38,7 @@ a {
 h1 {
   font-size: 4rem;
   color: rgba(250, 250, 250, 0.85);
+  text-transform: lowercase;
 }
 
 h1 span {
@@ -48,6 +49,7 @@ h2 {
   font-size: 3rem;
   padding: 70px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 p {
@@ -118,6 +120,7 @@ strong {
 
 .nav-initials span {
   position: absolute;
+  text-transform: lowercase;
   left: 24px;
   top: 8px;
   -webkit-transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -194,6 +197,7 @@ strong {
 }
 
 .nav-link a {
+  text-transform: lowercase;
   color: inherit;
   padding: 8px;
 }
@@ -416,7 +420,7 @@ strong {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding-bottom: 70px;
+  padding-bottom: 86px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -588,6 +592,7 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 86px;
 }
 
 .experience h2 {
@@ -610,7 +615,6 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0;
 }
 
 .experience .dev__item {
@@ -624,7 +628,7 @@ strong {
 }
 
 .experience hr {
-  background: #37CDDA;
+  margin-bottom: 16px;
 }
 
 .experience .career {
@@ -690,7 +694,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .experience .career {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -702,8 +706,8 @@ strong {
 
 @media screen and (min-width: 900px) {
   .experience .career {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .dev__list .dev__item {
     font-size: 4rem;
@@ -744,4 +748,8 @@ strong {
 
 .work h2 {
   color: rgba(250, 250, 250, 0.85);
+}
+
+.work .wrapper {
+  padding-bottom: 86px;
 }

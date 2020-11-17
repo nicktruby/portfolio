@@ -11,6 +11,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 86px;
   }
 
 
@@ -28,7 +29,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0;
   }
   
   .dev__item {
@@ -41,7 +41,7 @@
   }
   
   hr {
-    background: $primary;
+    margin-bottom: $spacing*2;
   }
   
   .career {
@@ -84,11 +84,7 @@
     font-size: 1em;
     margin-bottom: 0.5em;
     color: $text-dark-mid;
-    
-    a {
-      
     }
-  }
   }
 }
 
@@ -103,7 +99,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .experience .career {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -114,7 +110,7 @@
 
 @media screen and (min-width: 900px) {
   .experience .career {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .dev__list .dev__item{
     font-size: 4rem;
