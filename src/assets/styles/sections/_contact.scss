@@ -3,7 +3,8 @@
   background: url('../images/grey-bg.png');
   z-index: 5;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 800px;
   display: grid;
   grid-template-rows: min-content auto min-content;
   align-items: center;
