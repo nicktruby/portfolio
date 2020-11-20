@@ -46,30 +46,53 @@ const modal = document.querySelector('.modal');
 
 // Function to render the project details
 const renderModalContent = project => {
-  console.log("i am running");
+      const button = document.createElement('button');
+        button.classList.add('modal__close');
+        button.innerText = "×";    
       const article = document.createElement('article');
         article.classList.add('modal__project');
         article.id = `modal__${project.id}`;
-      const header = document.createElement('header');
-        header.classList.add('modal__header');
       const h2 = document.createElement ('h2');
         h2.innerText = project.title;
-      const img = document.createElement('img');
-        img.classList.add('modal__project-image');
-        img.setAttribute('src',project.cardImage);
-        img.setAttribute('alt',project.name);
-      const div = document.createElement('div');
-        div.classList.add('modal_project-title');
-      const i = document.createElement('i');
-        i.classList.add(...project.stackIconClass);
-      const button = document.createElement('button');
-        button.classList.add('modal__close');
-        button.innerText = "Close";
+        h2.classList.add('modal__title');
+      const images = document.createElement ('div');
+        images.classList.add('modal__images');
+        project.projectImages.forEach((image) => {
+          const img = document.createElement('img');
+          img.classList.add('modal__image');
+          img.setAttribute('src',image);
+          img.setAttribute('alt',project.name);
+          images.append(img);
+        })
+      const links = document.createElement('div');
+        links.classList.add('modal__links');
+      const siteLink = document.createElement('button');
+        siteLink.classList.add('modal__link');
+        siteLink.innerText = "live demo";
+      const githubLink = document.createElement('button');
+        githubLink.classList.add('modal__link');
+        githubLink.innerText = "github";
+      const stackList = document.createElement('ul');
+        stackList.classList.add('modal__stack-list');
+        project.stack.forEach(tech => {
+          const li = document.createElement('li');
+          li.classList.add("modal__stack-item");
+          li.innerText = tech+",";
+          stackList.append(li);
+        });
+        const descriptions = document.createElement('div');
+        descriptions.classList.add('modal__description');
+        project.descriptions.forEach(paragraph => {
+          const p = document.createElement('p');
+          p.innerText = paragraph;
+          descriptions.append(p);
+          
+      })
+      
         
-        div.append(i);
-        header.append(h2, button)
-        article.append(header, img, div);
-        modal.append(article);
+        links.append(siteLink, githubLink)
+        article.append(images, links, h2, stackList, descriptions);
+        modal.append(button, article);
 }
 
 // listen for a click on a project card
@@ -86,7 +109,7 @@ projectCards.addEventListener('click', e => {
   closeButton.addEventListener('click', () => {
     // close the modal and remove the project details
     modal.classList.remove('active');
-    setTimeout(()=>{modal.innerHTML = null;},300);
+    setTimeout(()=>{modal.innerHTML = null;},500);
   });
 });
 

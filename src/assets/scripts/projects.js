@@ -3,13 +3,16 @@ const projectsArr = [
   {
     id : "project--shiftreporter",
     title : "Shift Reporter",
-    summary : "Mining App",
-    description : "Clever Stuff",
-    skills:["skill1", "skill2", "skill3"],
-    stack: ["React, HTML", "CSS", "Javascript ES6"],
+    stack: ["React", "HTML", "CSS", "Javascript ES6"],
+    descriptions : [
+      "Over a 5 week period I worked effectively within a team to complete a real-client project. We built a “Shift Reporter” web application for managing a mining workforce and fleet of vehicles. The team was made up of 8 developers and we used Agile development and the Scrum framework, incorporating weekly sprints and pair-programming.",
+      "I had the opportunity to start the project as team-leader, setting up the first sprint, running daily stand-ups, communicating with the clients/product owner and presenting our progress to the client at the end of the week.",
+      "The project was built as a single page app in React. We used Google Firebase BaaS and the data was stored in a Firestore document database.",
+      "The software required “Operators” at the start of their shift to clock in, then complete a pre-start checklist of the vehicle they would operating that day. Upon completion the “Supervisor” needed to approve the start of their shift. If the checklist failed, this needed to create a job for the “Maintenance” team. Throughout the day the “Operators” and “Supervisors” needed to be able to record a “load”. The Supervisor, Mantenance and Management users all required a dashboard to display all of the relevant information regarding vehicles, teams and operators within their responsibility, and provide them to options to complete any tasks relating to their role. There also needed to be an admin portal for creating the users, vehicles and other data types.",
+    ],
     stackIconClass : ["fa-icon", "fab", "fa-react"],
     cardImage : "./src/assets/images/projects/shift-reporter-welcome.png",
-    projectImages :["src1", "src2", "src3"],
+    projectImages :["./src/assets/images/projects/shift-reporter-welcome.png", "./src/assets/images/projects/shift-reporter-welcome.png", "./src/assets/images/projects/shift-reporter-welcome.png"],
     github : "https://github.com/nicktruby/js-calculator",
     site : "https://js-calculator.truby.io/"
   },
@@ -17,10 +20,10 @@ const projectsArr = [
   {
     id : "project--brewdogapi",    
     title : "Brewdog API",
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    descriptions : [
+      "This is the description",
+    ],
     stackIconClass : ["fa-icon", "fab", "fa-react"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
@@ -31,10 +34,10 @@ const projectsArr = [
   {
     id : "project--bookfinder",    
     title : "Book finder",
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    descriptions : [
+      "This is the description",
+    ],
     stackIconClass : ["fa-icon", "fab", "fa-angular"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
@@ -45,10 +48,8 @@ const projectsArr = [
   {
     id : "project--api",    
     title : "Node JS - Custom API",
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    description : "This is the description",
     stackIconClass : ["fa-icon", "fab", "fa-node-js"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
@@ -59,10 +60,8 @@ const projectsArr = [
   {
     id : "project--preventthespread",
     title : '"Prevent the Spread" Javascript OOP game',
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    description : "This is the description",
     stackIconClass : ["fa-icon", "fab", "fa-js-square"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
@@ -73,10 +72,10 @@ const projectsArr = [
   {
     id : "project--calculator",
     title : "Javascript Calculator",
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    descriptions : [
+      "This is the description",
+    ],
     stackIconClass : ["fa-icon", "fab", "fa-js-square"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
@@ -87,11 +86,11 @@ const projectsArr = [
   {
     id : "project--morsecode",    
     title : "Morse Code Converter",
-    summary : "This is the summary",
-    description : "This is the description",
-    skills:["skill1", "skill2", "skill3"],
-    stackIconClass : ["fa-icon", "fab", "fa-js-square"],
     stack: ["HTML", "CSS", "Javascript ES6"],
+    descriptions : [
+      "This is the description",
+    ],
+    stackIconClass : ["fa-icon", "fab", "fa-js-square"],
     cardImage : "./src/assets/images/projects/calculator.jpg",
     projectImages :["src1", "src2", "src3"],
     github : "https://github.com/nicktruby/js-calculator",
