@@ -21,8 +21,13 @@
   border: none;
   background: transparent;
   color: $text-light-high;
+  height: fit-content;
   font-size: 3rem;
-  padding: $spacing/2;
+  width: 100%;
+  text-align: right;
+  padding: $spacing*2;
+  justify-self: end;
+  margin-left: auto;
 }
 
 .modal__project {
@@ -40,7 +45,7 @@
 
 .modal__images {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   overflow: auto;
   

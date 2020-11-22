@@ -511,8 +511,16 @@ strong {
   border: none;
   background: transparent;
   color: rgba(250, 250, 250, 0.85);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-size: 3rem;
-  padding: 4px;
+  width: 100%;
+  text-align: right;
+  padding: 16px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-left: auto;
 }
 
 .modal__project {
@@ -533,9 +541,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   overflow: auto;
 }
@@ -963,7 +971,7 @@ strong {
 
 .project {
   position: relative;
-  width: 300px;
+  width: 200px;
 }
 
 .project .fa-icon {
@@ -1005,7 +1013,7 @@ strong {
   overflow: hidden;
   text-align: center;
   height: 400px;
-  width: 300px;
+  width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
