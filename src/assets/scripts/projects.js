@@ -19,8 +19,8 @@ const projectsArr = [
                     "./src/assets/images/projects/shift-reporter/supervisor-load.png",
                     "./src/assets/images/projects/shift-reporter/supervisor-handover.png",
                     "./src/assets/images/projects/shift-reporter/operator-dashboard.png"],
-    github : "https://github.com/nicktruby/js-calculator",
-    site : "https://js-calculator.truby.io/"
+    github : "https://github.com/jackroy08/ShiftReporter",
+    site : "https://shiftreporter-3420e.web.app/"
   },
 
   {

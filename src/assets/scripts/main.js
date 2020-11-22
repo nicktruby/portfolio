@@ -66,12 +66,18 @@ const renderModalContent = project => {
         })
       const links = document.createElement('div');
         links.classList.add('modal__links');
-      const siteLink = document.createElement('button');
+      const siteLink = document.createElement('a');
         siteLink.classList.add('modal__link');
         siteLink.innerText = "live demo";
-      const githubLink = document.createElement('button');
+        siteLink.setAttribute('href', project.site);
+        siteLink.setAttribute('alt', project.name);
+        siteLink.setAttribute('target', 'blank');
+        const githubLink = document.createElement('a');
         githubLink.classList.add('modal__link');
         githubLink.innerText = "github";
+        githubLink.setAttribute('href', project.github);
+        githubLink.setAttribute('alt', project.name);
+        githubLink.setAttribute('target', 'blank');
       const stackList = document.createElement('ul');
         stackList.classList.add('modal__stack-list');
         project.stack.forEach(tech => {
