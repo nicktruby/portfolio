@@ -5,6 +5,7 @@ const projectsArr = [
     title : "Shift Reporter",
     stack: ["React", "Firebase BaaS", "SCSS"],
     descriptions : [
+      "For the live demo please use...Username: 5001, Password: 5001login",
       "Over a 5 week period I worked effectively within a team to complete a real-client project. We built a “Shift Reporter” web application for managing a mining workforce and fleet of vehicles. The team was made up of 8 developers and we used Agile development and the Scrum framework, incorporating weekly sprints and pair-programming.",
       "I had the opportunity to start the project as team-leader, setting up the first sprint, running daily stand-ups, communicating with the clients/product owner and presenting our progress to the client at the end of the week.",
       "The project was built as a single page app in React, we used Functional React and several Hooks including useState, useContext and one for managing Forms. We used Google Firebase BaaS and it's Firestore document database and it's authentication and authorisation to manage users and route them privately to heir relevant sections of the App.",
@@ -12,7 +13,8 @@ const projectsArr = [
     ],
     stackIconClass : ["fa-icon", "fab", "fa-react"],
     cardImage : "./src/assets/images/projects/shift-reporter/welcome.png",
-    projectImages :["./src/assets/images/projects/shift-reporter/management-dashboard.png",
+    projectImages :["./src/assets/images/projects/shift-reporter/password.png",
+                    "./src/assets/images/projects/shift-reporter/management-dashboard.png",
                     "./src/assets/images/projects/shift-reporter/admin-users.png",
                     "./src/assets/images/projects/shift-reporter/admin-create.png",
                     "./src/assets/images/projects/shift-reporter/supervisor-dashboard.png",
