@@ -3,7 +3,7 @@ const projectsArr = [
   {
     id : "project--shiftreporter",
     title : "Shift Reporter",
-    stack: ["React", "Firebase", "SCSS"],
+    stack: ["React", "Firebase BaaS", "SCSS"],
     descriptions : [
       "Over a 5 week period I worked effectively within a team to complete a real-client project. We built a “Shift Reporter” web application for managing a mining workforce and fleet of vehicles. The team was made up of 8 developers and we used Agile development and the Scrum framework, incorporating weekly sprints and pair-programming.",
       "I had the opportunity to start the project as team-leader, setting up the first sprint, running daily stand-ups, communicating with the clients/product owner and presenting our progress to the client at the end of the week.",
@@ -26,11 +26,11 @@ const projectsArr = [
   {
     id : "project--brewdogapi",    
     title : "Brewdog API",
-    stack: ["React", "Firebase", "SCSS"],
+    stack: ["React", "Firebase BaaS", "SCSS"],
     descriptions : [
-      "This project was built to demonstrate my skills at interacting with an external API. This involved reading the documentations and creating funcitons to amend the URL for the fetch query.",
-      "It is built using functional React, utilsing hooks such as useState, useEffect and useContext.",
-      "I then expanded upon this functionality adding in interactions with Google Firebase BaaS. Including user authentication and storing favoruites data in a Firestore document database."
+      "This project was built to demonstrate my skills at interacting with an external API. This involved reading the documentations and creating functions to amend the URL for the fetch query.",
+      "It is built using functional React, utilising hooks such as useState, useEffect and useContext.",
+      "I then expanded upon this functionality adding in interactions with Google Firebase BaaS. Including user authentication and storing favourites data in a Firestore document database."
     ],
     stackIconClass : ["fa-icon", "fab", "fa-react"],
     cardImage : "./src/assets/images/projects/brewdog-api/taproom.png",
@@ -42,19 +42,23 @@ const projectsArr = [
     site : "https://brewdog-api.truby.io/"
   },
 
-  // {
-  //   id : "project--bookfinder",    
-  //   title : "Book finder",
-  //   stack: ["HTML", "CSS", "Javascript ES6"],
-  //   descriptions : [
-  //     "This is the description",
-  //   ],
-  //   stackIconClass : ["fa-icon", "fab", "fa-angular"],
-  //   cardImage : "./src/assets/images/projects/calculator.jpg",
-  //   projectImages :["src1", "src2", "src3"],
-  //   github : "https://github.com/nicktruby",
-  //   site : "https://truby.io/"
-  // },
+  {
+    id : "project--bookfinder",    
+    title : "Book Finder",
+    stack: ["Angular", "Typescript", "Firebase BaaS", "SCSS"],
+    descriptions : [
+      "This Application allow you to search for books from the Google Books API, and save them to your favourites.",
+      "This was my first introduction into Angular and second experience of working with Typescript. It a key exmaple of my ability to learn a new syntax in a short space of time.",
+      "Coming from developing in React, I focused my learning around how to implement similar functionality in the Anglular framework. This is included Routing, passing data using Inputs & Outputs, sharing data globally using services, *ngFor loops, two-way binding using ngModel and integration with Google Firebase for authentication and Firestore database CRUD operations.",
+    ],
+    stackIconClass : ["fa-icon", "fab", "fa-angular"],
+    cardImage : "./src/assets/images/projects/bookfinder/findabook.png",
+    projectImages :["./src/assets/images/projects/bookfinder/findabook.png",
+                    "./src/assets/images/projects/bookfinder/searchresults.png",
+                    "./src/assets/images/projects/bookfinder/favourites.png"],
+    github : "https://github.com/nicktruby/bookfinder",
+    site : "https://bookfinder.truby.io/findabook"
+  },
   
   // {
   //   id : "project--api",    
@@ -70,14 +74,22 @@ const projectsArr = [
   
   // {
   //   id : "project--preventthespread",
-  //   title : '"Prevent the Spread" Javascript OOP game',
-  //   stack: ["HTML", "CSS", "Javascript ES6"],
-  //   description : "This is the description",
+  //   title : "Prevent the Spread",
+  //   stack: ["Javascript ES6", "HTML", "CSS"],
+  //   descriptions : [
+  //     "This project is a variation of the classic 'Space Invaders' game, with a fun virus related theme (very topical in 2020!).",
+  //     "The game is built in Javascript and demonstrates my OOP (Object Orientated Programming) skills. Completed during week 5 of my _nology software development course.",
+  //     "The game objects are all intantiated from classes, and those classes use inheritance to grow from basic entities into Bullets / Enemies or the Player.",
+  //     "This a was a good learning curve for me, having working functionally up until this point, and it helped me understand how to structure and build objects and how to organise functions as methods."],
   //   stackIconClass : ["fa-icon", "fab", "fa-js-square"],
-  //   cardImage : "./src/assets/images/projects/calculator.jpg",
-  //   projectImages :["src1", "src2", "src3"],
-  //   github : "https://github.com/nicktruby",
-  //   site : "https://truby.io/"
+  //   cardImage : "./src/assets/images/projects/js-calculator/zero.png",
+  //   projectImages :["./src/assets/images/projects/js-calculator/zero.png",
+  //                   "./src/assets/images/projects/js-calculator/nines.png",
+  //                   "./src/assets/images/projects/js-calculator/negative.png",
+  //                   "./src/assets/images/projects/js-calculator/negative-big.png",
+  //                   "./src/assets/images/projects/js-calculator/numbers.png"],
+  //   github : "https://github.com/nicktruby/prevent-the-spread",
+  //   site : "https://prevent-the-spread.truby.io/"
   // },
 
   {
@@ -104,13 +116,18 @@ const projectsArr = [
   //   title : "Morse Code Converter",
   //   stack: ["HTML", "CSS", "Javascript ES6"],
   //   descriptions : [
-  //     "This is the description",
+  //     "This was a timed project in the early weeks of my _nology course, create a morse code translator in a couple of hours.",
+  //     "I then came back to this project to add a little styling, and integrate some Jest testing.",
   //   ],
   //   stackIconClass : ["fa-icon", "fab", "fa-js-square"],
-  //   cardImage : "./src/assets/images/projects/calculator.jpg",
-  //   projectImages :["src1", "src2", "src3"],
-  //   github : "https://github.com/nicktruby",
-  //   site : "https://truby.io/"
+  //   cardImage : "./src/assets/images/projects/js-calculator/zero.png",
+  //   projectImages :["./src/assets/images/projects/js-calculator/zero.png",
+  //                   "./src/assets/images/projects/js-calculator/nines.png",
+  //                   "./src/assets/images/projects/js-calculator/negative.png",
+  //                   "./src/assets/images/projects/js-calculator/negative-big.png",
+  //                   "./src/assets/images/projects/js-calculator/numbers.png"],
+  //   github : "https://github.com/nicktruby/morse-code",
+  //   site : "https://morse-code.truby.io/"
   // }
 ]
 
