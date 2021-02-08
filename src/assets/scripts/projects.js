@@ -45,6 +45,33 @@ const projectsArr = [
   },
 
   {
+    id : "project--pokeapi",    
+    title : "Poke API",
+    stack: ["Angular", "Typescript", "SCSS"],
+    descriptions : [
+      "I worked on this project to further develop my Angular and Typescript skillset, It interacts with the PokeAPI to fetch and display data about pokemon.",
+      "One of my objectives was to have the URLs sharable and load the relevant data set for that link. This works for the paginated group list (pokedex) and the individual pokemon pages too.",
+      "I solidfied my understanding and practice using observables and subscriptions, and contained all the logic for fetching data within a 'pokemonService', and also used models for the data repsonses.",
+      "The API had different sections of data came from multiple endpoints, which invovled using a URL from one endpoint to fetch data from another endpoint. I nested my 'getPokemon()' subscriptions for this to work.",
+      "I used a 'builder' method to collate the data into one pokemon object, which I then used for generating the HTML content.",
+      "One of the helper methods within that builder was my first time coming across needing (and therefore figuring out and writing) a recursive method, which generated 'x' evolution stages for each pokemon.",
+    ],
+    stackIconClass : ["fa-icon", "fab", "fa-angular"],
+    cardImage : "./src/assets/images/projects/poke-api/mob-pokedex.png",
+    projectImages :["./src/assets/images/projects/poke-api/mob-pokedex.png",
+                    "./src/assets/images/projects/poke-api/mob-about.png",
+                    "./src/assets/images/projects/poke-api/mob-stats.png",
+                    "./src/assets/images/projects/poke-api/mob-evolution.png",
+                    "./src/assets/images/projects/poke-api/mob-moves.png",
+                    "./src/assets/images/projects/poke-api/desk-pokedex.png",
+                    "./src/assets/images/projects/poke-api/desk-about.png",
+                    "./src/assets/images/projects/poke-api/desk-stats.png",
+                    "./src/assets/images/projects/poke-api/desk-evolution.png",
+                    "./src/assets/images/projects/poke-api/desk-moves.png"],
+    github : "https://github.com/nicktruby/pokeAPI",
+    site : "https://poke-api.truby.io/"
+  },
+  {
     id : "project--bookfinder",    
     title : "Book Finder",
     stack: ["Angular", "Typescript", "Firebase BaaS", "SCSS"],
